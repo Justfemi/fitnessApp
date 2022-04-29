@@ -273,28 +273,32 @@ section {
 
 .features .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-  /* gap: 0; */
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 0;
+  border: solid red;
 }
 
 .features .box-container .box {
   background: var(--light-bg);
+  border: solid green;
 }
 
 .box .image {
   height: 30rem;
   width: 100%;
   overflow: hidden;
+  border: solid blue;
+  /* background: red; */
 }
-
+  
 .box-container .second {
   display: flex;
   flex-flow: column-reverse;
 }
 
-.box:hover .image img{
+/* .box:hover .image img{
   transform: scale(1.1);
-}
+} */
 
 .box .image .img {
   width: 100%;
@@ -306,7 +310,6 @@ section {
   padding: 2rem;
   text-align: center;
   width: 100%;
-  /* border: solid red; */
 }
 
 .content img {
