@@ -36,7 +36,7 @@ html {
 
 .heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   position: relative;
   text-transform: capitalize;
 }
@@ -157,17 +157,17 @@ section {
   align-items: center;
 }
 
-.slide .content {
+.home .slide .content {
   width: 60rem;
 }
 
-.content span {
+.home .slide .content span {
   font-size: 2rem;
   color: var(--red);
   display: block;
 }
 
-.content h3 {
+.home .slide .content h3 {
   font-size: 5rem;
   color: var(--white);
   padding: 1rem 0;
@@ -283,7 +283,7 @@ section {
   border: solid green;
 }
 
-.box .image {
+.features .box-container .box .image {
   height: 30rem;
   width: 100%;
   overflow: hidden;
@@ -291,44 +291,318 @@ section {
   /* background: red; */
 }
   
-.box-container .second {
+.features .box-container .second {
   display: flex;
   flex-flow: column-reverse;
 }
 
-/* .box:hover .image img{
+.features .box-container .box:hover .image img{
   transform: scale(1.1);
-} */
+}
 
-.box .image .img {
+.features .box-container .box .image .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.box .content {
+.features .box-container .box .content {
   padding: 2rem;
   text-align: center;
   width: 100%;
 }
 
-.content img {
+.features .box-container .box .content img {
   height: 9rem;
   margin-bottom: 1rem;
   filter: invert(1);
 }
 
-.content h3 {
+.features .box-container .box .content h3 {
   font-size: 2rem;
   color: var(--red);
 }
 
-.content p {
+.features .box-container .box .content p {
   line-height: 2;
   font-size: 1.5rem;
   color: var(--light-white);
   padding: 1rem 0;
 }
+
+/* PRICING SECTION */ 
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 0;
+}
+
+.pricing .information span {
+  font-size: 2rem;
+  color: var(--red);
+  text-transform: capitalize;
+}
+
+.pricing .information h3 {
+  font-size: 4rem;
+  padding-top: .5rem;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.pricing .information p {
+  font-size: 1.4rem;
+  color: var(--light-white);
+  text-transform: capitalize;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.pricing .information p i {
+  padding-right: 1rem;
+  color: var(--red);
+}
+
+.plan{
+  text-align: center;
+  padding: 2rem;
+}
+
+.pricing .basic {
+  background: linear-gradient(130deg, var(--light-bg) 93%, transparent 90%);
+}
+
+.plan h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.plan .price {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--red);
+}
+
+.price span{
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.plan .list{
+  padding: 1rem 0;
+}
+
+.plan .list p {
+  font-size: 1.4rem;
+  color: var(--light-white);
+  text-transform: capitalize;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.plan .list p i {
+  padding-right: 1rem;
+  color: var(--red);
+}
+
+/* TRAINERS SECTION */
+.trainers .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 2rem;
+}
+
+.trainers .box-container .box {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.trainers .box-container .box:hover .content{
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.trainers .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trainers .box-container .box .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background: var(--light-bg);
+  padding: 2rem;
+  transform: translateY(6.5rem);
+}
+
+.trainers .box-container .box .content span{
+  font-size: 1.5rem;
+  color: var(--red);
+  text-transform: capitalize;
+  letter-spacing: .4rem;
+}
+
+.trainers .box-container .box .content h3{
+  font-size: 2rem;
+  color: var(--white);
+  padding-top: .5rem;
+  text-transform: capitalize;
+}
+
+.trainers .box-container .box .content .share{
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: .1rem solid var(--light-white);
+}
+
+.share a{
+  font-size: 2rem;
+  color: var(--white);
+  margin-right: 1.5rem;
+}
+
+.share a:hover{
+  color: var(--red);
+}
+
+/* BANNER SECTION */
+.banner{
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./images/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.banner span{
+  font-size: 2rem;
+  color: var(--red);
+  text-transform: capitalize;
+}
+
+.banner h3{
+  padding-top: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+.banner p{
+  margin: 1rem auto;
+  max-width: 60rem;
+  font-size: 1.5rem;
+  color:var(--light-white);
+  line-height: 2;
+}
+
+/* REVIEW SECTION */
+.review {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.review .information {
+  flex:1 1 35rem;
+}
+
+.review .information span{
+  font-size: 2rem;
+  color: var(--red);
+  text-transform: capitalize;
+}
+
+.review .information h3{
+  font-size: 4rem;
+  color: var(--white);
+  padding-top: 1rem;
+  text-transform: capitalize;
+}
+
+.review .information p{
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-white);
+  padding: 1rem 0;
+}
+
+.review-slider {
+  flex:1 1 60rem;
+}
+
+.review-slider .slide{
+  background: linear-gradient(130deg, var(--light-bg) 93%, transparent 90%);
+  padding: 2rem 3rem;
+}
+
+.review-slider .slide p{
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-white);
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.user img{
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.user h3{
+  font-size: 2rem;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.user span {
+  color: var(--red);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.user i{
+  font-size: 5rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  color:var(--red);
+}
+
+/* BLOGS SECTION */
+.blogs .slide{
+  background: var(--light-bg);
+}
+
+.blogs .slide:hover .image img{
+  transform: scale(1.1);
+}
+
+.blogs .slide .image{
+  height:25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .slide image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 /* +MEDIA QUERIES */
 @media screen and (max-width: 991px) {
@@ -411,5 +685,9 @@ section {
 
   html {
     font-size: 55%;
+  }
+
+  .pricing .basic {
+    margin-top: 1rem;
   }
 }

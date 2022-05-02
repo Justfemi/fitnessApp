@@ -22,3 +22,17 @@ let swiper = new Swiper ('.home-slider', {
     clickable: true,
   },
 });
+
+let swiper2 = new Swiper ('.review-slider', {
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  breakpoints:{
+    0:{
+      sliderPerView:1,
+    },
+    600:{
+      sliderPerView:2,
+    }
+  }
+});
