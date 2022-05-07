@@ -1,4 +1,5 @@
 /* import font family */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 
 * {
   font-family: 'Nunito', sans-serif;
@@ -275,22 +276,18 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 0;
-  border: solid red;
 }
 
 .features .box-container .box {
   background: var(--light-bg);
-  border: solid green;
 }
 
 .features .box-container .box .image {
   height: 30rem;
   width: 100%;
   overflow: hidden;
-  border: solid blue;
-  /* background: red; */
 }
-  
+
 .features .box-container .second {
   display: flex;
   flex-flow: column-reverse;
@@ -300,7 +297,7 @@ section {
   transform: scale(1.1);
 }
 
-.features .box-container .box .image .img {
+.features .box-container .box .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -310,6 +307,7 @@ section {
   padding: 2rem;
   text-align: center;
   width: 100%;
+  height: 30rem;
 }
 
 .features .box-container .box .content img {
@@ -433,6 +431,7 @@ section {
 
 .trainers .box-container .box .content {
   position: absolute;
+  width: 100%;
   bottom: 0;
   left: 0;
   right:0;
@@ -584,6 +583,7 @@ section {
 /* BLOGS SECTION */
 .blogs .slide{
   background: var(--light-bg);
+  margin-bottom: 7rem;
 }
 
 .blogs .slide:hover .image img{
@@ -596,12 +596,46 @@ section {
   overflow: hidden;
 }
 
-.blogs .slide image img{
+.blogs .slide .image img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+.blogs .slide .content {
+  padding: 2rem;
+}
+
+.blogs .slide .content h3{
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.blogs .slide .content p{
+  font-size: 1.5rem;
+  color: var(--light-white);
+  padding: 1rem 0;
+}
+
+.blogs .slide .content .link {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.blogs .slide .content .link a {
+  color: var(--red);
+}
+
+.blogs .slide .content .link a:hover{
+  color: var(--white);
+}
+
+.blogs .slide .content .link span {
+  color: var(--white);
+  padding: 0 1rem;
+}
 
 
 /* +MEDIA QUERIES */
@@ -676,8 +710,12 @@ section {
     font-size: 3rem;
   }
 
-  .box-container .second {
+  .features .box-container .second {
     flex-flow: column;
+  }
+
+  .pricing .basic {
+    margin-top: 1rem;
   }
 }
 
@@ -685,9 +723,5 @@ section {
 
   html {
     font-size: 55%;
-  }
-
-  .pricing .basic {
-    margin-top: 1rem;
   }
 }
