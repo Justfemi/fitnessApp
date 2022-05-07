@@ -61,8 +61,11 @@ let swiperx = new Swiper ('.blogs-slider', {
     0:{
       sliderPerView:1,
     },
-    600:{
+    768:{
       sliderPerView:2,
-    }
+    },
+    991:{
+      sliderPerView:3,
+    },
   }
 });
