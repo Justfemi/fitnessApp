@@ -561,6 +561,7 @@ section {
 .user h3{
   font-size: 2rem;
   color: var(--white);
+  margin-bottom: 1rem;
   text-transform: capitalize;
 }
 
