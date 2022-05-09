@@ -98,6 +98,7 @@ header .logo {
   color: var(--white);
   font-size: 3rem;
   text-transform: uppercase;
+  border: .1rem solid var(--red);
 }
 
 header .logo span {
@@ -347,7 +348,7 @@ section {
   text-transform: capitalize;
   line-height: 2;
   padding: 1rem 0;
-}
+}qq
 
 .pricing .information p i {
   padding-right: 1rem;
