@@ -98,7 +98,6 @@ header .logo {
   color: var(--white);
   font-size: 3rem;
   text-transform: uppercase;
-  border: .1rem solid var(--red);
 }
 
 header .logo span {
